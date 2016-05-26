@@ -66,6 +66,7 @@ resize
 x = np.arange(3)
 np.resize(x,(8,))  #[0,1,2,0,1,2,0,1]
 ```
+hstack, vstack dstack
 ######A boolean mask
 ```
 x = np.array([1,2,3,-1)]
@@ -81,4 +82,12 @@ x  # array([1,2,3,0])
 ```
 help(), dir(),
 np.lookfor('resize')
+```
+#####4 Numpy Core
+#####5 Linear Algebra
+######The matrix class
+```
+ndarray = np.arange(9).reshape(3,3)
+x = np.matrix(ndarray)
+y = np.mat(np.identity(3))  #mat is same as numpy.matrix(data,copy=False)
 ```
